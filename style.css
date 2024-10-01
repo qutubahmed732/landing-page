@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  body {
+    background-color: #eeeeee;
+  }
+  
+  /* ==================== HEADER AREA ==================== */
+  
+  #header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  
+  
+  
+  #nav-bar {
+  
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 70px;
+    align-items: center;
+    background-color: #eeeeee;
+  }
+  
+  .image {
+    width: 300px;
+  }
+  
+  .image>img {
+    width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 7em;
+  }
+  
+  li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  
+  /*===================== SECTION AREA =============================*/
+  
+  #form {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  #form>h2 {
+    margin-top: 20px;
+  }
+  
+  #form>input[type="email"] {
+    width: 17em;
+    padding-block: 0.20rem;
+  }
+  
+  #form>input[type="submit"] {
+    width: 10em;
+    padding-block: 0.40rem;
+    background-color: #f1c40f;
+    font-weight: 800;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer
+  }
+  
+  .container {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .grid {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 100px;
+    text-align: center;
+    padding-block: 20px;
+    color: darkorange;
+  }
+  
+  p {
+    font: 1rem;
+  }
+  
+  #how-it-works {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #video {
+    max-width: 560px;
+    width: 100%;
+  }
+  
+  #pricing {
+    padding-inline: 90px;
+    padding-block: 40px;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product .level {
+    background-color: #ddd;
+    color: black;
+    width: 100%;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .product>h2 {
+    margin-top: 15px;
+  }
+  
+  .product ol {
+    margin: 15px 0;
+    list-style: none;
+  }
+  
+  .product>ol>li {
+    padding: 5px 0;
+  }
+  
+  .product button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    padding: 0 20px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    #nav-bar ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #form {
+      margin-top: 150px;
+      margin-bottom: 140px;
+      height: 2px;
+    }
+  
+    #video {
+      margin-top: 120px;
+    }
+  
+    #pricing {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-inline: 0px;
+      padding-block: 0px;
+    }
+  
+    .product {
+      width: 95%;
+      padding-inline: 10px;
+    }
+  
+    .product .level {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    #nav-bar ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  
+    #form {
+      margin-top: 150px;
+      margin-bottom: 140px;
+      height: 2px;
+    }
+  
+    #video {
+      margin-top: 120px;
+    }
+  
+    #pricing {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-inline: 0px;
+      padding-block: 0px;
+    }
+  
+    .product {
+      width: 95%;
+      padding-inline: 10px;
+    }
+  
+    .product .level {
+      width: 100%;
+    }
+  }
